@@ -1,0 +1,103 @@
+@import url("https://use.typekit.net/vxs1zuz.css");
+
+
+
+header{
+    padding: 2em 0;
+    background-color:black;
+    color:white;
+    text-align: center;
+    margin:0 0 3em;
+    display: inline-block;
+    width: 100%;
+}
+.v-logos{
+    display: flex;
+}
+
+.logo{
+    margin:0 3em;
+    padding:40px;
+}
+
+
+#one{
+    -webkit-box-shadow: 0px -2px 24px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -2px 24px -5px rgba(0,0,0,0.75);
+box-shadow: 0px -2px 24px -5px rgba(0,0,0,0.75);
+}
+
+#two{
+    background-color:black;
+}
+
+#three{
+    background-image: url(https://cdn.pixabay.com/photo/2015/08/04/09/00/backdrop-874452_960_720.jpg);
+    background-size: cover;
+}
+
+
+.colors{
+    display: flex;
+}
+
+.color-box{
+    text-align: center;
+}
+
+.color{
+    width:200px;
+    height: 100px;
+    margin:10px;
+}
+
+#black{
+    background-color:black;
+}
+
+#white{
+    -webkit-box-shadow: 0px -2px 24px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -2px 24px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px -2px 24px -5px rgba(0,0,0,0.75);
+}
+
+#red{
+    background-color:#931b1f;
+}
+
+#green{
+    background-color:#1d9e10;
+}
+
+h1{
+    font-family:'proxima-nova',Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+h2{
+    font-family:'proxima-nova',Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+h3{
+    font-family:'proxima-nova',Helvetica, sans-serif;
+    font-size: 27.2px;
+    font-weight: 100;
+}
+
+#sample-p{
+    font-family:'proxima-nova',Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.fonts{
+    display:flex;
+}
+
+.types{
+    padding: 1em;
+    border:1px solid #ccc;
+}

@@ -1,0 +1,1401 @@
+
+/* -----------------------------------------------------------------------------------------------------------------------------
+
+Author: Areli Jimenez Huerta, Mariia Liakh, Rosemary To, Zung Dinh
+Project: KI Sushi
+
+For information on styles, please refer to the KI SUSHI Style Guide that can be found in the style guide folder name "style-guide"
+
+ ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+ @import url("https://use.typekit.net/vxs1zuz.css");
+
+  article, aside, nav, section, main, header, footer,figure, video, audio{
+    display: block;
+} 
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family:'proxima-nova',Helvetica, sans-serif;
+    background-image: url(../images/backgrounds/bg.jpg);
+    background-size: cover;
+    background-color:rgba(255,255,255,.8);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    
+}
+
+.header {
+    background-color:white;
+	box-shadow: 5px  5px 24px  rgba(0,0,0,.7);
+    width: 100%;
+    height:auto;
+	z-index: 999;
+}
+
+
+.header .logo img{
+    width: 60px;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.menu{
+    clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+	list-style: none;
+	overflow: hidden;
+}
+
+.menu-icon{
+  cursor: pointer;
+  float:right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+	
+}
+
+.menu-btn, #hide{
+	display: none;
+    }
+    
+.menu-btn:checked ~ .menu {
+  max-height: 100%;
+}
+
+.menu li a{
+	display: block;
+	text-decoration: none;
+    padding: 1em;
+    color:black;
+    text-align: center;
+    transition:1s;
+    border-top:1px solid lightgrey;
+}
+
+.header .logo{
+	text-decoration: none;
+	display: block;
+	float: left;
+	padding: 10px 20px;	
+}
+
+.hero{
+    background-image: url(../images/home/hero.jpg);
+    background-size:cover;
+    background-color:rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+
+}
+
+.hero-text{
+    padding:4.5em 8% 18%;
+    color:white;
+    text-align: center;
+    font-family:' proxima-nova', sans-serif;
+}
+
+/* ----Main Header Text Begins:Note => Should not be change----- */
+
+.hero-text h1, .hero-text2 h1{
+    font-weight:100;
+    letter-spacing: .08em;
+    line-height: 1.4;
+    font-size: 36px;
+}
+/* ----Main Header Text Ends:Note => Should not be change----- */
+
+
+.hero-text a{
+    color:white;
+    background-color:#931b1f;
+    text-decoration:none;
+    padding: 10px 20px;
+    letter-spacing: .18em;
+    margin-top:1em;
+    display: inline-block;
+}
+
+main{
+    background-color:rgba(255,255,255,.6);
+    overflow: hidden;
+}
+
+/*-------- Controls all Sections Begins : NOTE: Do not change ------*/
+
+section{
+    width:100%;
+    max-width: 1200px;
+    margin:auto;
+}
+/*-------- Controls all Sections Ends : NOTE: Do not change ------*/
+
+
+/*-------- Controls all h2 : NOTE: Do not change ------*/
+ h2{
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 100;
+    letter-spacing: .1em;
+    text-align: center;
+    margin:1.5em 0 .5em;
+    text-shadow: -1px -1px 2px rgba(150, 150, 150, 1);
+}
+/*-------- Controls all h2 : NOTE: Do not change ------*/
+
+
+#home h3{
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: .1em;
+    text-align: center;
+    margin:1.5em 0 .5em;
+    text-shadow: -1px -1px 2px rgba(150, 150, 150, 1);
+}
+
+h3{
+    line-height: 1.4;
+}
+
+
+/*-------- Add this to align a text or element to the center BEGINS: NOTE: Do not change ------*/
+.align-c{
+    text-align:center;
+}
+/*-------- Add this to align a text or element to the center ENDS: NOTE: Do not change ------*/
+
+#home p, #about p, #contact p{
+    width:80%;
+    margin:auto;
+    line-height: 1.8;
+    letter-spacing: .1em;
+    padding:.5em;
+}
+.two .image-frame{
+    margin-top:2em;
+    height:100%;
+}
+
+/* ----All images with white frame :Note => Should not be change----- */
+
+.image-frame{
+    padding:18px;
+    background-color:white;
+    width: 80%;
+    max-width: 250px;
+    margin: 13px auto;
+    -webkit-box-shadow: -1px 1px 22px -1px rgba(0,0,0,0.54); 
+    box-shadow: -1px 1px 22px -1px rgba(0,0,0,0.54);
+
+}
+/* ----All images with white frame Ends:Note => Should not be change----- */
+
+.image-frame img, .image-frame2 img{
+    width:100%;
+}
+
+/* -------------------------  About Begin ------------------------ */
+
+#about .hero{
+    background-image: url(../images/about/500.jpg);
+    background-position: center;
+    background-color:rgba(0,0,0,.6);
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+
+}
+
+#about h1{
+    font-size: 28px;
+}
+
+#about h2{
+width:70%;
+margin:auto;
+
+}
+
+#about h4{
+    width: 80%;
+    margin:auto;
+}
+
+/* ----This controls all text thats center in the Hero Banner Begins:Note => Should not be change----- */
+
+
+.hero-text2{
+    padding:4.5em 3% 18%;
+    color:white;
+    text-align: center;
+}
+
+/* ----Main Header Text Ends:Note => Should not be change----- */
+
+/* -------------------------  About Ends ------------------------ */
+
+/* -------------------------  Blog Begin ------------------------ */
+
+.hero.blog{
+    background-image: url(../images/blog/500.jpg);
+    background-position: center;
+    background-color:rgba(0,0,0,.1);
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+}
+.blog h4{
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-align: center;
+}
+img.blog{
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+  -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+  box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+}
+.blog-container{
+  display: grid;
+  grid-gap: 15px;
+}
+.two.blog h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 2em;
+}
+.two.blog{
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 1.5em;
+}
+.blog-item{
+  background-color: rgba(255,255,255,.7);
+  padding: 15px;
+  border: 1px solid #fff;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+
+@media screen and (min-width: 400px) {
+
+    
+    /********** Blog Media Query **********/
+        .two.blog{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    /********** End Blog Media Query **********/
+    
+    }
+
+/* -------------------------  Blog Ends ------------------------ */
+
+/* ------------------------ CATERING CSS- BEGIN  ----------------- */
+
+#catering .hero {
+    background-image:url(../images/catering/500.jpg);
+    background-size:cover;
+    background-color:rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    background-attachment: fixed;
+}
+.cateringpic-text {
+    padding:4.5em 8% 18%;
+    color: white;
+    text-align: right;
+}
+
+.wrapper {
+
+    margin: 100px auto; 
+}
+.title {
+    text-align: left;
+    margin-bottom: 60px;
+    margin-left: 15px;
+}
+.title h4 {
+    text-transform: capitalize;
+    font-size: 4rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.title h4 span {
+    display: block;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: -5px;
+}
+.title h4:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #931b1f;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.single-menu:hover img {
+    border-radius: 0;
+}
+.single-menu {
+    border-bottom: 0;
+    flex-basis: 980px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.single-menu small {
+    font-size: 0.7em;
+}
+.single-menu img {
+    max-width: 180px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    transition: .5s;
+}
+.single-menu h4, .single-menu p {
+    width: 100%;    
+}
+.single-menu h4 {
+    text-transform: capitalize;
+    font-size: 2.3rem;
+    border-bottom: 1px dashed #333;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.single-menu h4 span {
+    float: right;
+    color: #931b1f;
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+
+/* ------------------------ CATERING CSS- ends  ----------------- */
+
+
+/* -------- RESERVATIONS CSS-BEGIN  -------- */
+
+
+#reservations .hero{
+    background-image:url(../images/reservations/500.jpg);
+    background-size:cover;
+    background-color:rgba(0,0,0,.2);
+    background-blend-mode: darken;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    background-attachment: fixed;
+    transition:2s;
+}
+
+.heading-days {
+    color: #e8ba2e;
+    font-size: 1.8rem; 
+    font-style: italic;
+}
+.heading-days p {
+    font-size: 1.5rem; 
+}
+.heading-phone {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.container-form {
+    padding: 40px 0 40px 15px;
+    margin: 0 auto;
+    color: #000;
+}
+.heading {
+     font-style: italic;
+     font-size: 2rem;
+     text-transform: uppercase;
+}
+.container {
+    font-weight: 200;
+    color: #fff;
+    background-color: #FAFAFA;
+    margin: 15px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .3);
+    display: grid;
+    grid-template-columns: auto;
+}
+.container-time {
+    background-image: url(https://cdn.pixabay.com/photo/2017/09/23/12/00/kyoto-2778629_960_720.jpg);
+    background-attachment: fixed;
+    padding: 50px;
+    background-size: cover;
+    outline: 3px double #fff;
+    outline-offset: -30px;
+    text-align: center;
+    background-color: rgba(0,0,0,.80);
+    background-blend-mode: darken;
+    background-position: center;
+}
+.container-form {
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #000;
+}
+form {
+    display: grid;
+    grid-row-gap: 20px;
+}
+form p {
+    font-weight: 200;
+    font-size: 1.6rem;
+    color: #4d4249;
+    width: 100%;
+}
+.form-field {
+    justify-content: space-evenly;
+    color: #4d4249;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+#reservations input, select {
+    padding: 8px 5px;
+    margin-top:.5em;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.6); 
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+    width: 100%;
+}
+
+.btn {
+    background-color: #931b1f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: all .4s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+     -ms-transition: all .3s;
+     -o-transition: all .3s;
+    
+}
+.btn:hover {
+    transform: scale(1.03);
+    background-color: #383036;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, .8);
+}
+
+/* -------- @media screen -BEGIN  -------- */
+
+@media screen and (min-width:576px) {
+    p {
+        font-size: 1.25rem; 
+    }
+    .title h4:before {
+        position: absolute;
+    }
+    .title h4 {
+        font-size: 2.2rem;
+    }
+    .title h4 span {
+        font-size: 1.1rem;
+    }
+    .single-menu h4 {
+        font-size: 1.4rem; 
+    }
+    .title {
+         text-align: center;
+         margin-bottom: 60px;
+         margin-left: 14px;
+    }
+    .Cateringmenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+    .single-menu {
+        flex-basis: 580px;
+
+    }   
+    .single-menu:nth-child(7), .single-menu:nth-child(8){
+        border-bottom: 0;
+    }
+    .single-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    
+/* ------ @media screen Reservations -BEGIN  ------ */
+    
+.container {
+    margin: 1em;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .3);
+    grid-template-columns: 40% 60%;
+}
+    
+ .single-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+.form-field {
+    justify-content: space-between;
+}
+
+
+}
+
+@media screen and (min-width:972px) {
+    .container {
+        margin: 1em 200px;
+    }
+}
+
+  
+/* -------------------------  Contact Begins ------------------------ */
+
+.hero.contact-us{
+    background-image: url(../images/contact/500.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+}
+
+
+#contact h3{
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: .1em;
+    text-align: center;
+    margin:1.5em 0 .5em;
+    text-shadow: -1px -1px 2px rgba(150, 150, 150, 1);
+}
+
+
+
+p.contact-us{
+  width: 100%;
+  font-size: 18px;
+}
+.two.contact-us{
+  grid-area: s2cu;
+}
+.contact-us-map{
+  height: 22em;
+  width: auto;
+  display: grid;
+  justify-content: center;
+  padding-bottom:1.5em;
+} 
+iframe{
+  height: 100%;
+  width: 100%;
+  padding:20px;
+  background-color:white;
+  -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+}
+.three.contact-us{
+  grid-area: s3cu;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+}
+.contact-us.align-c{ 
+  font-size: 1.3em;
+  font-weight: 100;
+  width:80%;
+  line-height: 1.8;
+  letter-spacing: .1em;
+}
+.contact-us-hours{
+  text-align:center;
+}
+ul.contact-us{ 
+  padding:.5em;
+  list-style: none;
+  line-height: 1.8;
+  letter-spacing: .1em;
+  font-size: 1.3em;
+}
+
+/* Contact-Us Form */
+
+#contact-form{
+    padding: 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+}
+
+
+fieldset.contact-us{
+  color: #000;
+  font-weight: 600;
+  font-size: 1.3em;
+  border: none;
+  background-image: url(../images/contact/heroimage-contact-us.jpeg);
+  padding: 1em 2em;
+  background-color: rgba(255,255,255,.45);
+  background-blend-mode: lighten;
+}
+label{
+  display: block;
+  margin-top: 1em;
+  line-height: 1.8;
+  letter-spacing: .1em;
+}
+input{
+  padding: 1em;
+  border: solid 1px #fff;
+}
+input[type="text"], input[type="email"]{
+  width: 16em;
+}
+textarea{
+  min-height: 8em;
+  min-width: 100%;
+  border: solid 1px #fff;
+}
+.contact-us-pref p{
+  margin: 1em 0 0;
+  padding-left: 0;
+}
+.contact-us-form input[type="radio"] + label,.contact-us-form input[type="checkbox"] + label{
+  display: inline-block;
+  padding-top: 0;
+  margin-top: 0;
+}
+input[type="submit"]{
+  padding: .5em 1em;
+  font-size: 1em;
+  background-color: #931b1f;
+  color: #fff;
+  border: none;
+  margin-top: 1em;
+  -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+  -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+  box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.95);
+}
+
+
+/* -------------------------  Contact Ends ------------------------ */
+
+
+/* -------------------------  Menus Begin ------------------------ */
+
+
+#appetizers .hero{
+    background-image:url(../images/appetizers/hero-500.jpg);
+    background-size:cover;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+
+}
+
+
+#entrees .hero{
+    background-image:url(../images/entrees/hero-500.jpg);
+    background-size:cover;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+
+}
+
+#sushi .hero{
+    background-image:url(../images/sushi/hero-500.jpg);
+    background-size:cover;
+    background-color:rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+
+}
+
+.foodCategory{
+    color: #931b1f;
+}
+
+#entrees .align-c h3{
+    line-height: 1.4;
+    padding-top:1em;
+    color:#931b1f;
+}
+
+#entrees .align-c h4{
+    line-height: 1.4;
+    font-weight: 100;
+    padding-top:.5em;
+
+}
+
+
+#appetizers .hero-text{
+    padding:4.5em 8% 18%;
+    color:white;
+    text-align: center;
+}
+
+#appetizers .hero-text h1, #entrees .hero-text h1{
+    font-weight:100;
+    letter-spacing: .08em;
+    line-height: 1.4;
+    
+}
+
+/*-------- Add one of these class if you need extra padding on top to and element BEGINS: NOTE: Do not change ------*/
+
+.pt-2{
+    padding-top:2em;
+}
+
+.pt-4{
+    padding-top:4em;
+}
+/*-------- Add one of these class if you need extra padding on top to and element ENDS: NOTE: Do not change ------*/
+
+.image-frame3{
+    width: 100%;
+    max-width: 350px;
+    margin: 13px auto;
+}
+
+.image-frame4{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
+.image-frame3 img{
+    padding:20px;
+    width: 100%;
+    margin:auto;
+    background-color:white;
+    -webkit-box-shadow: -1px 1px 22px -1px rgba(0,0,0,0.54); 
+    box-shadow: -1px 1px 22px -1px rgba(0,0,0,0.54);
+    margin-bottom:15px;
+}
+
+
+section.four{
+    padding:2em 0;
+    margin:auto;
+}
+
+
+.image-frame3 p, .image-frame3 ul{
+    width:100%;
+    margin:0;
+    padding:0;
+    line-height: 1.4;
+    padding:1em 0;
+}
+
+.image-frame3 .served{
+    padding: 0;
+}
+
+
+.gallery-row2{
+    background-color:white;
+    text-align: center;
+    padding:2em 0;
+    margin:2em 2.5em;
+    border: 5px double #ccc;
+    -webkit-box-shadow: -1px 1px 22px -1px rgba(0,0,0,0.54);
+    box-shadow: -1px 1px 22px -1px rgba(0,0,0,0.54);
+}
+
+
+.gallery-row2 ul li{
+    list-style-type:none;
+    padding: .5em 0;
+}
+
+.image-frame3 small{
+    padding-bottom:20em;
+}
+
+/* -------------------------  Menus Ends ------------------------ */
+
+/* -------------------------  Happy Hour Begins ------------------------ */
+
+
+#happy .hero{
+    background-image:url(../images/happyHour/500.jpg);
+  
+    background-size:cover;
+    background-position: center;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+
+}
+
+#happy .hero-text2 h2{
+    font-weight: 600;
+    font-size: 1.55em;
+    letter-spacing: .14em;
+    line-height: 1.4;
+    color:whitesmoke;
+}
+
+
+.happy-text{
+    text-align: center;
+    padding: 2em 0;
+}
+
+
+
+.happy-text h4{
+
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: .1em;
+    line-height: 1.2em;
+    padding-bottom: 7px;
+}
+
+table {
+
+    border-spacing: 10px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+td {
+    text-align: left;
+    padding:0px 15px 10px;
+
+}
+.middle {
+    text-align: center;
+
+}
+
+th {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    
+}
+
+
+/* -------------------------  Happy Hour Ends ------------------------ */
+
+
+section.three{
+    padding:2em 0 4em;
+}
+
+.image-frame2{
+    padding:20px;
+    background-color:white;
+    width: 80%;
+    max-width: 320px;
+    margin: 13px auto;
+    -webkit-box-shadow: -1px 1px 22px -1px rgba(0,0,0,0.54); 
+    box-shadow: -1px 1px 22px -1px rgba(0,0,0,0.54);
+
+ 
+}
+
+footer{
+    background-image: url(../images/backgrounds/footer-bg.jpg);
+    background-size: cover;
+    background-color:rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    padding: 8em 3em;
+    text-align: center;
+    color:white;
+    overflow: hidden;
+    box-shadow: 45px  5px 24px  rgba(0,0,0,.9);
+}
+
+footer .logo img{
+    width: 75px;
+    padding-bottom:20px;
+}
+
+footer .address h4{
+    font-size: 28px;;
+}
+
+
+.social{
+    padding:1.5em 0;
+}
+
+#about .social-box h4{
+    width: 100%;
+}
+
+.btn-custom:link, .btn-custom:active, .btn-custom:hover,.btn-custom:visited{
+    background-color:white;
+    margin:5px;
+    border-radius:0px;
+    padding:14px 8px 8px;
+    transition:2s!important;
+}
+
+
+.fab, .far {
+    font-weight: 400;
+    font-size: 1.4em;
+    color:black;
+    width:28px;
+
+}
+
+
+
+@media (min-width: 808px) {
+
+  .header{
+      height:auto;
+      display: inline-block;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    padding-top:2.5em;
+    display: inline-block;
+  }
+
+  #hide{
+      display: inline-block;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu li {
+    float: left;
+    border-right:1px solid black;
+
+  }
+
+  .menu li:last-child{
+      border-right:0px;
+  }
+  .menu li a {
+    padding: .5em;
+    width: 120px;
+    font-size: 14px;
+    border-top:none;
+
+  }
+
+  .dropdown{
+    padding-top:2.29em;;
+    position: absolute;
+  }
+
+  .dropdown li{
+    display: none;
+    float: none;
+    z-index: 99999999;
+    position: relative;
+    border-right: none;
+  }
+
+  .dropdown li a{
+    padding-top:15px;
+    padding-bottom:15px;
+    border-top: 1px solid whitesmoke;
+    border-right: 0;
+    background-color: white;
+  }
+
+  .dropdown li a:hover{
+      background-color:black;
+      color:white;
+  }
+
+ .menu li:hover ul li{
+    display: block;
+}
+
+  .hero{
+      background-image: url(../images/home/hero.jpg);
+      background-position: center;
+      background-color:rgba(0,0,0,.1);
+      display: inline-block;
+      width: 100%;
+      margin-top:-5px;
+      transition: 2s;
+      background-attachment: fixed;
+
+  }
+
+
+.hero-text{
+    padding:10em 8% 14%;
+   float:right;
+}
+
+
+.hero-text2{
+    padding:10em 8% 14%;
+}
+
+
+.hero-text h1{
+    font-size: 36px;
+}
+
+.hero-text a{
+    font-size:18px;
+}
+
+#appetizers .hero-text, #entrees .hero-text, #sushi .hero-text{
+   padding:10em 8% 14%;
+   float:left;
+   text-align: left;
+}
+
+section.one{
+    padding-bottom:2em;
+}
+
+section.two,section.three{
+    display: flex; 
+}
+/* -------------------------  About Begin ------------------------ */
+#about .hero{
+    background-image: url(../images/about/carusel1.jpg);
+    background-position: center;
+    background-color:rgba(0,0,0,.5);
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+
+}
+
+#about h1{
+    font-size: 32px;
+}
+
+
+/* -------------------------  About Ends ------------------------ */
+
+
+/* -------------------------  Blog Begins ------------------------ */
+
+.hero.blog{
+    background-image: url(../images/blog/blog-osechi.png);
+    background-position: center;
+    background-color:rgba(0,0,0,.1);
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+}
+
+/********** Blog Media Query **********/
+.two.blog{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/********** End Blog Media Query **********/
+
+/* -------------------------  Blog Ends ------------------------ */
+
+
+/* -------------------------  Contact Begins ------------------------ */
+
+.hero.contact-us{
+    background-image: url(../images/contact/contact-us-hero.jpg);
+    background-position: center;
+    background-color:rgba(0,0,0,.3);
+    background-blend-mode: darken;
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+}
+
+
+
+#contact-us-container{
+    display: grid;
+    grid-template-areas: 
+        "s2cu s3cu";
+    grid-template-columns: 1fr 1fr;
+    padding:2em 0;
+}
+    .two.contact-us{
+        display: block;
+    }
+    ul.contact-us{ 
+    margin-bottom: 1.5em;
+    }
+/* Contact-Us Form */    
+input[type="radio"]{
+    margin-left: 1.5em;
+    
+}
+input[type="radio"]:first-of-type{
+    margin-left: 0;
+}
+
+
+
+/* -------------------------  Contact Ends ------------------------ */
+
+
+
+/* -------------------------  MENU Begin ------------------------ */
+
+
+#appetizers .hero{
+    background-image: url(../images/appetizers/hero.jpg);
+    background-position: center;
+    background-color:rgba(0,0,0,.1);
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+
+}
+
+
+#entrees .hero{
+    background-image: url(../images/entrees/hero.jpg);
+    background-position: center;
+    background-color:rgba(0,0,0,.15);
+    background-blend-mode: darken;
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+
+}
+
+#sushi .hero{
+    background-image: url(../images/sushi/hero.jpg);
+    background-position: center;
+    background-color:rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    display: inline-block;
+    width: 100%;
+    margin-top:-5px;
+    transition: 2s;
+    background-attachment: fixed;
+
+}
+
+
+section.four{
+    padding:2em 0;
+}
+
+
+.image-frame4 ul{
+    width:100%;
+    margin:0;
+    padding:0;
+    line-height: 1.4;
+   
+}
+
+
+.gallery-row{
+    display: flex;
+}
+
+.gallery-row2{
+    display: flex;
+    width: 95%;
+    margin:3em auto;
+}
+
+/* -------------------------  MENU Ends------------------------ */
+
+
+/* -------------------------  Happy Hour Begins------------------------ */
+
+#happy .hero{
+    background-image:url(../images/happyHour/herohero.jpg);
+  background-color:rgba(0,0,0,.45);
+  background-blend-mode: darken;
+    background-size:cover;
+    background-position: bottom;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+
+}
+
+
+
+.row {
+
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.column {
+    float: left;
+    width: 48%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* -------------------------  Happy Hour Ends------------------------ */
+
+
+.orders{
+    width:35%;
+}
+
+
+#commit{
+    order:-2;
+}
+
+.footer-info{
+ float: left;
+ width:60%;
+}
+
+footer .logo{
+    float:left;
+    padding-right:1em;
+}
+
+footer .logo img{
+    width: 85px;
+}
+
+.address p{
+    font-size: 1em;
+    line-height: 1.6;
+    padding:0!important;
+    width: 100%!important;
+}
+footer .address{
+    text-align: left;
+   
+}
+
+.social-box{
+    float:right;
+    padding-top:3em;
+}
+
+
+
+/* -------- RESERVATIONS CSS-BEGIN  -------- */
+
+
+#reservations .hero{
+    background-image:url(../images/reservations/set.jpg);
+    background-size:cover;
+    background-color:rgba(0,0,0,.25);
+    background-blend-mode: darken;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    background-attachment: fixed;
+    transition:2s;
+}
+
+#reservations .hero-text{
+    float: left;
+  }
+
+  #catering .hero {
+    background-image:url(../images/catering/heroCatering.jpg);
+    background-size:cover;
+    background-color:rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    -webkit-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -11px rgba(0,0,0,0.75);
+    background-attachment: fixed;
+}
+
+}
